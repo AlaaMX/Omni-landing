@@ -1,0 +1,134 @@
+.targetCard {
+    width: 100%;
+    max-width: 360px;
+    color: var(--l-primary);
+  }
+  
+  .cardTop {
+    align-self: flex-end;
+    display: flex;
+    align-items: end;
+    margin-bottom: -1px;
+    padding: 0 32px;
+    transition: 0.15s;
+  }
+
+  .cardContent,
+  .targetCard {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cardContent {
+    border-radius: 16px;
+    background-color: var(--l-white);
+    border: 1px solid var(--l-border);
+    padding: 20px;
+  }
+
+
+  .topCopy {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 16px;
+    gap: 8px;
+  }
+
+  .header {
+    font-family: var(--font-Tiempos);
+    font-size: var(--l-headline-size);
+    color: var(--l-primary);
+    letter-spacing: -0.04em;
+    line-height: 103%;
+    font-weight: 600;
+  }
+
+  .body {
+    font-family: var(--font-Nunito);
+    font-size: var( --l-base-size);
+    color: var(--l-primary);
+    opacity: 0.5;
+    line-height: 135%;
+    font-weight: 300;
+  }
+
+  .cta {
+    border-top: 1px solid var(--l-border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:16px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.15s;
+}
+
+.accent_info {
+    font-family: var(--font-Nunito);
+    font-size: var( --l-small-size);
+    color: var(--l-accent);
+  }
+
+  .cta_copy {
+    font-family: var(--font-Nunito);
+    font-size: var(--font-size-base);
+    color: var(--l-primary);
+  }
+
+
+  .arrowIcon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .cardFooter {
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  @media only screen and (max-width: 360px) {
+    /* Styles to apply when the viewport width is 768 pixels or wider */
+  
+    .cardContent {
+      border-radius: 0px;
+    }
+
+    .cardFooter {
+      padding: 24px;
+    }
+  
+    /* Additional styles can be added here for larger viewports */
+  }
+
+  .hint {
+    font-family: var(--font-Nunito);
+    font-size: var(--l-small-size);
+    color: var(--l-primary);
+    opacity: 0.5;
+  }
+
+  .cta:hover {
+    background-color: var(--l-accent);
+
+  }
+
+  .cta:hover .arrowIcon {
+        stroke:var(--l-white)
+  }
+
+  .cta:hover .accent_info,
+  .cta:hover .cta_copy {
+    color: var(--l-white);
+  }
+
+
+  .cardTop:has(+ .cardContent:hover) {
+    margin-bottom: -1px;
+  }
+
+  .cardContent:hover,
+  .targetCard:hover .targetCard1 {
+    background-color: var(--l-honeydew);
+  }

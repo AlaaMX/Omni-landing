@@ -1,0 +1,28 @@
+.icon {
+    fill:var(--l-primary)
+}
+
+.buttonColor {
+
+    border: 1px solid var(--l-border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 16px 24px;
+    border-radius: 50px;
+    font-family: var(--font-Nunito);
+    font-size: var( --l-base-size);
+    color: var(--l-primary);
+    font-weight: 600;
+    transition: 0.15s;
+    cursor: pointer;
+}
+
+.buttonColor:hover {
+    background-color: var(--l-primary);
+    color: var(--l-white);
+}
+.buttonColor:hover svg {
+    fill: var(--l-white);
+}

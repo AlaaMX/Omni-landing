@@ -1,0 +1,38 @@
+.footerContainer {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap:12px;
+    padding: 0px 32px 32px;
+    align-items: center;
+    border-top: 1px solid var(--l-border);
+    font-family: var(--font-Nunito);
+    font-size: var( --l-small-size);
+    color: var(--l-primary);
+}
+
+.navigation {
+    display: flex;
+    gap: 16px;
+    opacity: 0.5;
+}
+
+.label {
+    text-decoration: underline;
+}
+
+.hint {
+    opacity: 0.5;
+    max-width: 350px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 360px) {
+    /* Styles to apply when the viewport width is 768 pixels or wider */
+  
+    .navigation {
+        gap: 8px;
+    }
+  
+    /* Additional styles can be added here for larger viewports */
+  }

@@ -1,0 +1,246 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 6rem;
+    min-height: 100vh;
+    gap: 80px;
+  }
+
+
+
+.content {
+    display: flex;
+    align-items: center;
+    max-width: 900px;
+    width: 100%;
+    gap:48px
+}
+
+
+.left {
+    flex: 1.75;
+    display: flex;
+    flex-direction: column;
+}
+
+.leftTop {
+    flex: 1;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    /*background-color: var(--l-accent);*/
+}
+
+.header {
+    font-family: var(--font-Tiempos);
+    font-size: var(--l-headline-size);
+    color: var(--l-primary);
+    letter-spacing: -0.04em;
+    line-height: 103%;
+    font-weight: 600;
+  }
+
+  .body {
+    font-family: var(--font-Nunito);
+    font-size: var( --l-base-size);
+    color: var(--l-primary);
+    opacity: 0.5;
+    line-height: 135%;
+    font-weight: 300;
+  }
+
+.leftBottom {
+    flex: 1;
+    display: flex;
+    gap: 8px;
+    }
+
+.leftBottomLeft {
+    flex: 1.75;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    gap: 8px;
+    border-top: 1px dashed var(--l-border);
+}
+.accent_info {
+    font-family: var(--font-Nunito);
+    font-size: var( --l-small-size);
+    color: var(--l-accent);
+  }
+
+  .cta_copy {
+    font-family: var(--font-Nunito);
+    font-size: var(--font-size-base);
+    color: var(--l-primary);
+  }
+  .hint {
+    font-family: var(--font-Nunito);
+    font-size: var(--l-small-size);
+    color: var(--l-primary);
+    opacity: 0.5;
+    margin-bottom: 12px;
+  }
+
+
+.leftBottomRight {
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    position: relative;
+}
+
+
+
+.right {
+    flex: 1;
+    background-color: #0C3E32;
+    display: flex;
+    flex-direction: column;
+    padding: 8px 48px 48px;
+    border-radius: 16px;
+    height: fit-content;
+    color: var(--l-white);
+    
+}
+
+
+/******************************************************/
+/******************************************************/
+
+.featuresIllustration {
+     margin-top: -40px;
+}
+
+.featureHeading {
+    font-family: var(--font-Tiempos);
+    font-size: 35px;
+    letter-spacing: -0.04em;
+    line-height: 103%;
+    font-weight: 600;
+    margin: 24px 0px;
+}
+
+.featureTop {
+    display: flex;
+    gap: 8px;
+}
+
+.featureNumber {
+    font-family: var(--font-Nunito);
+    font-size: var(--l-small-size);
+    opacity: 0.7;
+    font-weight: 300;
+}
+
+.featureHeadline {
+    font-family: var(--font-Nunito);
+    font-size: var(--l-small-size);
+}
+
+.featureBody {
+    font-family: var(--font-Nunito);
+    font-size: var(--l-small-size);
+    opacity: 0.7;
+    margin-bottom: 16px;
+}
+
+
+@media only screen and (max-width: 899px) {
+    /* Styles to apply when the viewport width is 768 pixels or wider */
+    .left {
+        flex: 1.35;
+    }
+    .leftBottomRight {
+        display: none;
+            }
+    .content {
+        gap: 16px;
+        padding: 0px 64px;
+      }
+  
+    /* Additional styles can be added here for larger viewports */
+  }
+
+  
+  @media only screen and (max-width: 820px) {
+    /* Styles to apply when the viewport width is 768 pixels or wider */
+    .left {
+        flex: 1.35;
+    }
+    .leftBottomRight {
+        display: none;
+            }
+    .content {
+        gap: 16px;
+        padding: 0px 32px;
+      }
+  
+    /* Additional styles can be added here for larger viewports */
+  }
+
+  
+  @media only screen and (max-width: 720px) {
+    /* Styles to apply when the viewport width is 768 pixels or wider */
+  
+    .main  {
+        padding-top: 32px;
+        gap:32px
+      }
+
+
+    .content {
+        flex-direction: column;
+        max-width: 360px;
+        padding: 0;
+      }
+
+
+      .right {
+        margin-top: 32px;
+      }
+
+      .leftBottom {
+        flex-direction: column;
+      }
+
+      .leftBottomRight {
+        display: flex;
+        justify-content: center;
+        order: 1;
+      }
+      .leftBottomLeft {
+        order: 2;
+      }
+  
+  
+    /* Additional styles can be added here for larger viewports */
+  }
+
+  @media only screen and (max-width: 360px) {
+    /* Styles to apply when the viewport width is 768 pixels or wider */
+  
+    .content {
+        flex-direction: column;
+        max-width: 360px;
+        padding: 0;
+      }
+
+      .left {
+          padding: 0 16px 16px;
+      }
+      .right {
+        border-radius: 0;
+        padding: 32px;
+      }
+
+      .featuresIllustration {
+        margin-top: -80px;
+   }
+  
+    /* Additional styles can be added here for larger viewports */
+  }
