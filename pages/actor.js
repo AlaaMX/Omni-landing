@@ -22,9 +22,7 @@ export default function Home() {
                         <section className={styles.leftTop}>
                             <Image src="/megaphone-illustration.svg" width={132} height={113} />
                             <h1 className={styles.header}>Revolutionize Your Acting Journey.</h1>
-                            <p className={styles.body}>
-                                Omni understands and grows with you. It's not just about showcasing talent; it's about aligning it with the right opportunities, ensuring a seamless fit every time.
-                            </p>
+                            <p className={styles.body}> Omni understands and grows with you. Its not just about showcasing talent; its about aligning it with the right opportunities, ensuring a seamless fit every time. </p>
                         </section>
                         <section className={styles.leftBottom}>
                             <section className={styles.leftBottomLeft}>
@@ -66,7 +64,7 @@ export default function Home() {
                                 <div>
                                     <h4 className={styles.featureHeadline}>Upload your resume</h4>
                                     <p className={styles.featureBody}>
-                                        Empower your journey: Upload your resume and let it work for you, unlocking new opportunities
+                                        Empower your journey: Upload your resume and let it work for you, unlocking new opportunities.
                                     </p>
                                 </div>
                             </div>
