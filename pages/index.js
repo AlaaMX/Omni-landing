@@ -7,8 +7,8 @@ import Footer from '@/components/Footer'
 
 
 
-const actorTrialHint = <><b>/*Start your free trial</b> now and get matched with relevent roles. (No credit card required.)</>
-  const directorTrialHint = <><b>/*Start your free trial</b> now and audition only relevent actors. (No credit card required.)</>
+const actorTrialHint = <><b>{"/*Start your free trial"}</b> now and get matched with relevent roles. {"(No credit card required.)"}</>
+const directorTrialHint = <><b>{"/*Start your free trial"}</b> now and audition only relevent actors. {"(No credit card required.)"}</>
 
 
 export default function Home() {
