@@ -14,7 +14,7 @@ function Footer() {
                 <li>-</li>
                 <Link href="/director" className={styles.label}>Directors</Link>
             </ul>
-            <p className={styles.hint}>By utilizing our product, you acknowledge and agree to abide by our <Link href="https://drive.google.com/file/d/1S9jx-lMcRG5tCIFSAPlvlQWmNBy0AetL/view?usp=drive_link" target='_blank' className={styles.label} >terms of service</Link > and <Link target='_blank' href="https://drive.google.com/file/d/1btblTUda-6E7nxmtrVpbCpNk1eTkCpIx/view?usp=sharing" className={styles.label}>privacy policy.</Link></p>
+            <p className={styles.hint}>By utilizing our product, you acknowledge and agree to abide by our <Link href="https://drive.google.com/file/d/1S9jx-lMcRG5tCIFSAPlvlQWmNBy0AetL/view?usp=drive_link" target="_blank" className={styles.label} >terms of service</Link > and <Link target="_blank" href="https://drive.google.com/file/d/1btblTUda-6E7nxmtrVpbCpNk1eTkCpIx/view?usp=sharing" className={styles.label}>privacy policy.</Link></p>
         </footer>
     )
 }
