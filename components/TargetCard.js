@@ -17,7 +17,7 @@ const TargetCard = ({ target, description, href, androidLink, appleLink, illustr
                 </div>
                 <Link href={href} className={styles.cta}>
                     <div>
-                        <div className={styles.accent_info}>*No Credit Card Required</div>
+                        <div className={styles.accent_info}>No Credit Card Required</div>
                         <div className={styles.cta_copy}>Start your <b>30 days</b> free trial.</div>
                     </div>
                     <svg className={styles.arrowIcon} width="25" height="25" viewBox="0 0 25 25" stroke="#0D0D0D" xmlns="http://www.w3.org/2000/svg">
