@@ -29,7 +29,8 @@ function Button({ type }) {
     return (
         <button className={styles.buttonColor}>
             {type == "ANDROID" ? <AndroidIcon /> : <AppleIcon />}
-            Get on the Play store
+            {type == "ANDROID" ? "Get on the Play store" : "Get on the App store"}
+
         </button>
     )
 }
