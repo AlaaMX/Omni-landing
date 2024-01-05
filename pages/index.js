@@ -6,6 +6,11 @@ import TargetCard from '@/components/TargetCard'
 import Footer from '@/components/Footer'
 
 
+
+const actorTrialHint = <><b>/*Start your free trial</b> now and get matched with relevent roles. (No credit card required.)</>
+  const directorTrialHint = <><b>/*Start your free trial</b> now and audition only relevent actors. (No credit card required.)</>
+
+
 export default function Home() {
   return (
     <>
@@ -18,13 +23,13 @@ export default function Home() {
       <main className={styles.main}>
         <TopBar />
         <div className={styles.targetCardGroup}>
-          <TargetCard target="For Actors" description="Traditional casting is a marathon. Omni turns it into a sprint, with its intuitive system that rapidly connects you with the roles best suited for you." hint={<><b>/*Start your free trial</b> now and get matched with relevent roles. (No credit card required.)</>} href="/actor" androidLink="https://play.google.com/store" appleLink="https://www.apple.com/us/store" mockup="/actor-phone-target.svg" illustration="/target-illustration-actor.svg" />
+          <TargetCard target="For Actors" description="Traditional casting is a marathon. Omni turns it into a sprint, with its intuitive system that rapidly connects you with the roles best suited for you." hint={actorTrialHint} href="/actor" androidLink="https://play.google.com/store" appleLink="https://www.apple.com/us/store" mockup="/actor-phone-target.svg" illustration="/target-illustration-actor.svg" />
           <div className={styles.sparkleConnector}>
             <div className={styles.divider} />
             <Image src="/sparkle.svg" width={40} height={26} />
             <div className={styles.divider} />
           </div>
-          <TargetCard target="For Directors" description="In the dynamic world of entertainment, every moment counts. Omni's advanced matching system, introduces relevent actors to your submitted roles swiftly." hint={<><b>/*Start your free trial</b> now and audition only relevent actors. (No credit card required.)</>} href="/director" androidLink="https://play.google.com/store" appleLink="https://www.apple.com/us/store" mockup="/director-phone-target.svg" illustration="/target-illustration-director.svg" />
+          <TargetCard target="For Directors" description="In the dynamic world of entertainment, every moment counts. Omni's advanced matching system, introduces relevent actors to your submitted roles swiftly." hint={directorTrialHint} href="/director" androidLink="https://play.google.com/store" appleLink="https://www.apple.com/us/store" mockup="/director-phone-target.svg" illustration="/target-illustration-director.svg" />
         </div>
         <Footer />
       </main>
